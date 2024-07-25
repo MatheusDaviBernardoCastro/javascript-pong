@@ -19,7 +19,7 @@ function draw(){
     //chamando a função
     criaBolinha(xBolinha, yBolinha, tamBolinha);
     //chamando a função mov bolinha 
-    movebolhina();
+    movebolinha();
 }
 
 //função bolinha
@@ -27,7 +27,7 @@ function criaBolinha(xBolinha, yBolinha,tamBolinha){
     circle (xBolinha,yBolinha,tamBolinha);
 }
 //função move bolinha
-function move bolinha(){
+function movebolinha(){
     xbolinha = xvelocidadebolinha + xbolinha;
     yBolinha = yvelocidadebolinha + yBolinha;
 }
