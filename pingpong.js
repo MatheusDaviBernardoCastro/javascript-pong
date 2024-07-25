@@ -4,8 +4,8 @@ let yBolinha = 200;
 let tamBolinha = 25;
 
 //config velocidade bolinha
-let xvelocidadebolinha = 6;
-let yvelocidadebolinha = 6;
+let xvelocidadeBolinha = 6;
+let yvelocidadeBolinha = 6;
 
 function setup(){
     //aqui vou criar minha "mesa"
@@ -13,21 +13,23 @@ function setup(){
 }
 
 function draw(){
+    //função responsável pelo "desenho e animação da mesa"
     //aqui vou por a cor da "mesa"
     //A cor da mesa é em rgb
     background(128,128,0); 
-    //chamando a função
+    //chamando a função cria bolinha para criar a bolinha
     criaBolinha(xBolinha, yBolinha, tamBolinha);
-    //chamando a função mov bolinha 
-    movebolinha();
+    //chamando a função mov bolinha
+    moveBolinha();
 }
 
 //função bolinha
 function criaBolinha(xBolinha, yBolinha,tamBolinha){
     circle (xBolinha,yBolinha,tamBolinha);
 }
+
 //função move bolinha
-function movebolinha(){
-    xbolinha = xvelocidadebolinha + xbolinha;
-    yBolinha = yvelocidadebolinha + yBolinha;
+function moveBolinha(){
+    xBolinha = xvelocidadeBolinha + xBolinha;
+    yBolinha = yvelocidadeBolinha + yBolinha;
 }
